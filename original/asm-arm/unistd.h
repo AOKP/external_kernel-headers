@@ -426,7 +426,7 @@
 
 /*
  * The following syscalls are obsolete and no longer available for EABI.
- */
+   Temporarily commented out to fix busybox compilation
 #if !defined(__KERNEL__)
 #if defined(__ARM_EABI__)
 #undef __NR_time
@@ -443,7 +443,7 @@
 #undef __NR_ipc
 #endif
 #endif
-
+ */
 #ifdef __KERNEL__
 
 #define __ARCH_WANT_IPC_PARSE_VERSION
